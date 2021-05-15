@@ -1,12 +1,36 @@
+
+html{
+  height: 100%;
+  width: 100%;
+}
+body {
+  background-image: url(./100977717_2657193451192094_1676112451847847936_n.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(3,1fr);
+}
+
+
 header {
-    height: 60px;
+    justify-content: center;
+    align-self: center;
+    grid-area: 1/2/1/2;
     text-align: center;
+    background-color: rgba(206, 190, 245,0.5);
+    border-radius: 20px;
   }
   
   main {
+    grid-area: 2/2/2/2;
     background-color: #0087de;
-    height: 900px;
+    height: 100%;
+    padding: 0;
+    margin: 0;
     text-align: center;
+    border-radius: 20px;
   }
   
   h1 {
@@ -45,21 +69,23 @@ header {
     font-size: 14px;
     letter-spacing: 0.2px;
     text-align: center;
-    color: #ffffff;
+    color: black;
+    background-color: white;
   }
   
   #shorten {
-    width: 91px;
-    height: 37px;
+    width: 50%;
+    padding: 5px;
+    height: 50px;
     border-radius: 3.2px;
     border: solid 0.8px #1f233e;
     background-color: inherit;
     margin-top: 48px;
     font-family: Source Sans Pro;
-    font-size: 14px;
+    font-size: 1.5em;
     letter-spacing: 0.2px;
     text-align: center;
-    color: #ffffff;
+    color: black;
     margin-right: -3px;
   }
   
@@ -87,7 +113,8 @@ header {
     font-size: 16px;
     letter-spacing: 0.2px;
     text-align: center;
-    color: #ffffff;
+    color: black;
     overflow: auto;
+    background-color: rgb(235, 235, 238);
   }
   
